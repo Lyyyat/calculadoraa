@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Área</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Área de Polígonos</h1>
+    <p>A calculadora permite calcular a área de qualquer polígono regular. Basta informar o número de lados e o comprimento de um lado.</p>
+    <ul>
+      <li>Insira o número de lados (mínimo 3).</li>
+      <li>Informe o comprimento de um lado.</li>
+      <li>Aperte em calcular área.</li>
+    </ul>
+    <button id="abrirpopup">Abrir Calculadora</button>
+  </div>
+
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <span id="fecharpopup" class="close">&times;</span>
+      <h2>Calculadora de Área</h2>
+      <form id="areacalculador">
+        <label for="numLados">Digite o número de lados:</label><br>
+        <input type="number" id="numLados" placeholder="Exemplo: 3, 4, 6, ..." min="3">
+        <br><br>
+        <label for="lado">Digite o comprimento do lado:</label><br>
+        <input type="number" id="lado" placeholder="Comprimento do lado">
+        <br><br>
+        <button type="button" id="calcularBtn">Calcular Área</button>
+      </form>
+      <div id="resultado"></div>
+    </div>
+  </div>
+
+  <script src="calculadora.js"></script>
+</body>
+</html>
+
